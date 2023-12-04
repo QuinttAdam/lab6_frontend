@@ -1,12 +1,12 @@
 <script setup>
-import ChangeScore from './components/ChangeScore.vue'
-import ScoreBoard from './components/ScoreBoard.vue'
+
 </script>
 
 <template>
   <div>
-    <ChangeScore />
-    <ScoreBoard />
+    <router-link to="/">Update</router-link>
+    <router-link to="/scoreboard">Scoreboard</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
