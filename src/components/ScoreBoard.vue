@@ -13,7 +13,7 @@ let data= ref([{
 
 onMounted(() => {
   // Connect to WebSocket server
-  socket = new WebSocket('ws://localhost:3000/primus'); // Use 'ws' instead of 'http'
+  socket = new WebSocket('wss://labo6-backend.onrender.com/primus'); // Use 'ws' instead of 'http'
 
   socket.onmessage= (event)=>{
         // console.log(event.data);
